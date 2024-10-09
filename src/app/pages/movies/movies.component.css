@@ -1,0 +1,46 @@
+.container .search-section {
+  display: grid;
+  grid-template-areas: "input button filter";
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container .search-section .search-bar {
+  grid-area: input;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.container .search-section .search-submit {
+  grid-area: button;
+  padding: 15px;
+  background-color: rgb(1, 89, 144);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .search-section .search-submit:hover {
+  background-color: #013a5d;
+}
+.container .search-section .search-filter {
+  grid-area: filter;
+  padding: 15px;
+  background-color: #fff;
+  color: rgb(1, 89, 144);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .search-section .search-filter:hover {
+  background-color: rgb(1, 89, 144);
+  color: #fff;
+}/*# sourceMappingURL=movies.component.css.map */

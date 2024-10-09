@@ -1,0 +1,23 @@
+#container {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
+  height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidenav;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}/*# sourceMappingURL=app.component.css.map */

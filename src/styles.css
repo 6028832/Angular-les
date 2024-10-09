@@ -1,14 +1,12 @@
-@import 'variables';
-
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   padding: 0;
-  background-color: rgb(345, 245, 220);
-  color: $primary-color;
-}
-
+  background-color: rgb(255, 245, 220);
+  color: rgb(6, 156, 156);
+}/*# sourceMappingURL=styles.css.map */

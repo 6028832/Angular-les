@@ -1,0 +1,8 @@
+<div *ngFor="let school of [school, secondSchool]">
+    <div class="school-card">
+        <div class="image" [style.background-image]="'url(' + school.foto + ')'">
+        <h2>{{ school.school_name }}</h2>
+        <p>Start Date: {{ school.start_date | date:'longDate' }}</p>
+        <p>End Date: {{ school.end_date | date:'longDate' }}</p>
+    </div>
+</div>

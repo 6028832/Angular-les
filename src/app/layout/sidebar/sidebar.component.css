@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 40, 40);
+}
+.container a mat-icon {
+  color: rgb(1, 89, 144);
+}
+.container a:nth-child(4):hover mat-icon {
+  color: green;
+}
+.container a:nth-child(3):hover mat-icon {
+  color: yellow;
+}
+.container a:nth-child(2):hover mat-icon {
+  color: red;
+}
+.container a:nth-child(1):hover mat-icon {
+  color: orange;
+}/*# sourceMappingURL=sidebar.component.css.map */

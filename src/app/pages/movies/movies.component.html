@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="search-section">
+    <input class="search-bar" [(ngModel)]="searchTerm" placeholder="Search for movies">
+    <button class="search-submit" (click)="searchMovies()">Search</button>
+    <button class="search-filter">Filter</button>
+  </div>
+  
+  <div class="movies-section">
+    <ul class="movies-list">
+      <li *ngFor="let movie of movies">
+        <mat-card class="movies-list-items" appearance="outlined">
+          <mat-card-header class="movies-list-header">
+            <mat-card-title>{{ movie.Title }}</mat-card-title>
+            <mat-card-subtitle>Year: {{ movie.Year }}, Type: {{ movie.Type }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="movie.Poster" alt="Photo of the selected input">
+        </mat-card>
+      </li>
+    </ul>
+  </div>
+</div>

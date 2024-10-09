@@ -1,0 +1,7 @@
+<div *ngFor="let work of [albertHeijn]" >
+    <div class="container-work">
+        <h1>{{work.work_name}}</h1>
+        <p>Start Date: {{work.start_date | date:'longDate'}}</p>
+        <p>{{work.end_date | date:'longDate'}}</p>
+    </div>
+</div>

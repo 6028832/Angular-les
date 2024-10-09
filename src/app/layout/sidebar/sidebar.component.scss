@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 40, 40);
+    a {
+        mat-icon {
+            color: $secondary-color;
+        }
+
+        @for $i from 4 through length(a) {
+            &:nth-child(#{$i}):hover mat-icon {
+                color: nth($colors, $i);
+            }
+        }
+    }
+}
